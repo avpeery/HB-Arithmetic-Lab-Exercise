@@ -32,7 +32,13 @@ def power(num1, num2):
 def mod(num1, num2):
     """Return the remainder of num1 / num2."""
     return num1 % num2
+
+def complicated_calculation(num1, num2, num3):
+    return ((num1 + num2) * num3)
+
+
 def turn_str_into_int(l):
+    """takes list and turns string numbers into integers"""
     new_list = []
     for item in l:
         if item.isdigit():
@@ -56,11 +62,11 @@ while True:
         print(multiply(user_input[1], user_input[2]))
     elif user_input[0] == "/":
         print(divide(user_input[1], user_input[2]))
-    elif user_input[0] == "**" and user_input[2] == 2:
+    elif user_input[0] == "**" and user_input[2] == 2 or user_input[0] == "squares":
         print(square(user_input[1]))
-    elif user_input[0] == "**" and user_input[2] == 3:
+    elif user_input[0] == "**" and user_input[2] == 3 or user_input[0] == "cubes":
         print(cube(user_input[1]))
-    elif user_input[0] == "**" and not user_input[2] ==2 and not user_input[2] == 3:
+    elif user_input[0] == "**" and not user_input[2] == 2 and not user_input[2] == 3:
         print(power(user_input[1], user_input[2]))
     elif user_input[0] == "%":
         print(mod(user_input[1], user_input[2]))
@@ -71,3 +77,10 @@ while True:
     if continue_game.upper() == "NO":
         print("Goodbye!")
         break
+
+#greeting function (welcomes greeter)
+#turns string numbers in list to integers
+#basic operator functions
+#play calculator function
+#continue game function
+#
